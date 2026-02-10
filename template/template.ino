@@ -2,6 +2,7 @@ int TRIG_PIN = 13;
 int ECHO_PIN = 12;
 int MOTOR_PIN1 = 6;
 int MOTOR_PIN2 = 5;
+int SERVO_PIN = 9;
 float SPEED_OF_SOUND = 0.0345;
 
 float calculate_dist(int trig_pin, int echo_pin, int speed_of_sound) {
@@ -12,6 +13,8 @@ float calculate_dist(int trig_pin, int echo_pin, int speed_of_sound) {
   float dist_cm = microsecs * speed_of_sound / 2;
   return dist_cm;
 }
+
+float 
 
 void setup() {
   pinMode(MOTOR_PIN1, OUTPUT);
